@@ -3,9 +3,9 @@
 ## Overview
 
 Learn how to leverage GitHub.com knowledge bases and repository context to get more accurate and relevant suggestions from GitHub Copilot.
-- The `@github` agent is a powerful tool integrated directly into GitHub.com that allows you to interact with GitHub Copilot through natural language queries. By typing commands prefixed with `@github` you can ask questions about your codebase, request explanations, and get code suggestions tailored to your specific project.
 
-Knowledge bases on GitHub.com are repositories or collections of documentation that provide context and standardized best practices for your projects. By indexing a knowledge base, GitHub Copilot can use this information to give more accurate and context-aware suggestions, ensuring that your code aligns with your team's standards and practices. For more information, refer to the GitHub documentation.
+- The `@github` agent is a powerful tool integrated directly into GitHub.com that allows you to interact with GitHub Copilot through natural language queries. By typing commands prefixed with `@github` you can ask questions about your codebase, request explanations, and get code suggestions tailored to your specific project. 
+- Knowledge bases on GitHub.com are repositories or collections of documentation that provide context and standardized best practices for your projects. By indexing a knowledge base, GitHub Copilot can use this information to give more accurate and context-aware suggestions, ensuring that your code aligns with your team's standards and practices. For more information, refer to the GitHub documentation.
 
 ## Prerequesites: Setting up
 ### Indexing a Repository
@@ -25,6 +25,27 @@ To set up a knowledge base for GitHub Copilot Chat, follow these steps:
 - Enable indexing for this repository by following the indexing steps mentioned above.
 
 For a deeper dive on KB set up, see [GitHub documentation](https://docs.github.com/en/enterprise-cloud@latest/copilot/customizing-copilot/managing-copilot-knowledge-bases) 
+
+### Using the @github agent
+To access the `@github` agent in your IDE (VS Code or Visual Studio), follow these steps:
+
+**Visual Studio Code (VS Code)**
+- Install the GitHub Copilot extension from the Visual Studio Code Marketplace.
+- Open your project in VS Code.
+  - Use the `@github` prefix in the command palette or in your code to interact with the GitHub agent.
+  - Example: @github what are the coding standards for this project?
+- Docs [here](https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide)
+
+**Visual Studio**
+- Install the GitHub Copilot extension from the Visual Studio Marketplace.
+- Open your solution in Visual Studio.
+  - Access the GitHub agent through the command window or in your code using the @github prefix.
+  - Example: @github show me how to handle API errors according to our standards.
+- Docs [here](https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide?tool=visualstudio)
+
+For more information using the GitHub Copilot agent, refer to the GitHub documentation.
+
+
 
 ## 1. Repository-Aware Queries
 
